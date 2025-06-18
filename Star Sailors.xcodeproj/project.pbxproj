@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B516C80C2E0332CB009CD265 /* Star_SailorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B516C80B2E0332CB009CD265 /* Star_SailorsApp.swift */; };
+		B516C80E2E0332CB009CD265 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B516C80D2E0332CB009CD265 /* ContentView.swift */; };
+		B516C8102E0332CB009CD265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B516C80F2E0332CB009CD265 /* Assets.xcassets */; };
+		B516C8132E0332CB009CD265 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B516C8122E0332CB009CD265 /* Preview Assets.xcassets */; };
+		B516C81D2E0332CC009CD265 /* Star_SailorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B516C81C2E0332CC009CD265 /* Star_SailorsTests.swift */; };
+		B516C8272E0332CC009CD265 /* Star_SailorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B516C8262E0332CC009CD265 /* Star_SailorsUITests.swift */; };
+		B516C8292E0332CC009CD265 /* Star_SailorsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B516C8282E0332CC009CD265 /* Star_SailorsUITestsLaunchTests.swift */; };
+		B516C8372E033345009CD265 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = B516C8362E033345009CD265 /* Auth */; };
+		B516C8392E033345009CD265 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = B516C8382E033345009CD265 /* Functions */; };
+		B516C83B2E033345009CD265 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = B516C83A2E033345009CD265 /* PostgREST */; };
+		B516C83D2E033345009CD265 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = B516C83C2E033345009CD265 /* Realtime */; };
+		B516C83F2E033345009CD265 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = B516C83E2E033345009CD265 /* Storage */; };
+		B516C8442E033366009CD265 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = B516C8432E033366009CD265 /* Supabase */; };
+		B516C8472E033381009CD265 /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B516C8462E033381009CD265 /* Supabase.swift */; };
+		B516C84A2E0338D2009CD265 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B516C8492E0338D2009CD265 /* Theme.swift */; };
+		B516C84D2E033961009CD265 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B516C84C2E033961009CD265 /* Models.swift */; };
+		B516C8502E0339F0009CD265 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B516C84F2E0339F0009CD265 /* AuthView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B516C8192E0332CC009CD265 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B516C8002E0332CB009CD265 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B516C8072E0332CB009CD265;
+			remoteInfo = "Star Sailors";
+		};
+		B516C8232E0332CC009CD265 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B516C8002E0332CB009CD265 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B516C8072E0332CB009CD265;
+			remoteInfo = "Star Sailors";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B516C8082E0332CB009CD265 /* Star Sailors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Star Sailors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B516C80B2E0332CB009CD265 /* Star_SailorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star_SailorsApp.swift; sourceTree = "<group>"; };
+		B516C80D2E0332CB009CD265 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B516C80F2E0332CB009CD265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B516C8122E0332CB009CD265 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B516C8182E0332CC009CD265 /* Star SailorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Star SailorsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B516C81C2E0332CC009CD265 /* Star_SailorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star_SailorsTests.swift; sourceTree = "<group>"; };
+		B516C8222E0332CC009CD265 /* Star SailorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Star SailorsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B516C8262E0332CC009CD265 /* Star_SailorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star_SailorsUITests.swift; sourceTree = "<group>"; };
+		B516C8282E0332CC009CD265 /* Star_SailorsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star_SailorsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B516C8462E033381009CD265 /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
+		B516C8492E0338D2009CD265 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		B516C84C2E033961009CD265 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B516C84F2E0339F0009CD265 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B516C8052E0332CB009CD265 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B516C83B2E033345009CD265 /* PostgREST in Frameworks */,
+				B516C8392E033345009CD265 /* Functions in Frameworks */,
+				B516C8442E033366009CD265 /* Supabase in Frameworks */,
+				B516C8372E033345009CD265 /* Auth in Frameworks */,
+				B516C83F2E033345009CD265 /* Storage in Frameworks */,
+				B516C83D2E033345009CD265 /* Realtime in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B516C8152E0332CC009CD265 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B516C81F2E0332CC009CD265 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B516C7FF2E0332CB009CD265 = {
+			isa = PBXGroup;
+			children = (
+				B516C80A2E0332CB009CD265 /* Star Sailors */,
+				B516C81B2E0332CC009CD265 /* Star SailorsTests */,
+				B516C8252E0332CC009CD265 /* Star SailorsUITests */,
+				B516C8092E0332CB009CD265 /* Products */,
+				B516C8422E033366009CD265 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B516C8092E0332CB009CD265 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B516C8082E0332CB009CD265 /* Star Sailors.app */,
+				B516C8182E0332CC009CD265 /* Star SailorsTests.xctest */,
+				B516C8222E0332CC009CD265 /* Star SailorsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B516C80A2E0332CB009CD265 /* Star Sailors */ = {
+			isa = PBXGroup;
+			children = (
+				B516C84B2E033959009CD265 /* Models */,
+				B516C8482E0338C8009CD265 /* Styling */,
+				B516C8452E033376009CD265 /* Config */,
+				B516C80B2E0332CB009CD265 /* Star_SailorsApp.swift */,
+				B516C80D2E0332CB009CD265 /* ContentView.swift */,
+				B516C80F2E0332CB009CD265 /* Assets.xcassets */,
+				B516C8112E0332CB009CD265 /* Preview Content */,
+			);
+			path = "Star Sailors";
+			sourceTree = "<group>";
+		};
+		B516C8112E0332CB009CD265 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B516C8122E0332CB009CD265 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B516C81B2E0332CC009CD265 /* Star SailorsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B516C81C2E0332CC009CD265 /* Star_SailorsTests.swift */,
+			);
+			path = "Star SailorsTests";
+			sourceTree = "<group>";
+		};
+		B516C8252E0332CC009CD265 /* Star SailorsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B516C8262E0332CC009CD265 /* Star_SailorsUITests.swift */,
+				B516C8282E0332CC009CD265 /* Star_SailorsUITestsLaunchTests.swift */,
+			);
+			path = "Star SailorsUITests";
+			sourceTree = "<group>";
+		};
+		B516C8422E033366009CD265 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B516C8452E033376009CD265 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B516C84E2E0339E5009CD265 /* Authentication */,
+				B516C8462E033381009CD265 /* Supabase.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		B516C8482E0338C8009CD265 /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				B516C8492E0338D2009CD265 /* Theme.swift */,
+			);
+			path = Styling;
+			sourceTree = "<group>";
+		};
+		B516C84B2E033959009CD265 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B516C84C2E033961009CD265 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B516C84E2E0339E5009CD265 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				B516C84F2E0339F0009CD265 /* AuthView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B516C8072E0332CB009CD265 /* Star Sailors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B516C82C2E0332CC009CD265 /* Build configuration list for PBXNativeTarget "Star Sailors" */;
+			buildPhases = (
+				B516C8042E0332CB009CD265 /* Sources */,
+				B516C8052E0332CB009CD265 /* Frameworks */,
+				B516C8062E0332CB009CD265 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B516C8412E033356009CD265 /* PBXTargetDependency */,
+			);
+			name = "Star Sailors";
+			packageProductDependencies = (
+				B516C8362E033345009CD265 /* Auth */,
+				B516C8382E033345009CD265 /* Functions */,
+				B516C83A2E033345009CD265 /* PostgREST */,
+				B516C83C2E033345009CD265 /* Realtime */,
+				B516C83E2E033345009CD265 /* Storage */,
+				B516C8432E033366009CD265 /* Supabase */,
+			);
+			productName = "Star Sailors";
+			productReference = B516C8082E0332CB009CD265 /* Star Sailors.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B516C8172E0332CC009CD265 /* Star SailorsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B516C82F2E0332CC009CD265 /* Build configuration list for PBXNativeTarget "Star SailorsTests" */;
+			buildPhases = (
+				B516C8142E0332CC009CD265 /* Sources */,
+				B516C8152E0332CC009CD265 /* Frameworks */,
+				B516C8162E0332CC009CD265 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B516C81A2E0332CC009CD265 /* PBXTargetDependency */,
+			);
+			name = "Star SailorsTests";
+			productName = "Star SailorsTests";
+			productReference = B516C8182E0332CC009CD265 /* Star SailorsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B516C8212E0332CC009CD265 /* Star SailorsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B516C8322E0332CC009CD265 /* Build configuration list for PBXNativeTarget "Star SailorsUITests" */;
+			buildPhases = (
+				B516C81E2E0332CC009CD265 /* Sources */,
+				B516C81F2E0332CC009CD265 /* Frameworks */,
+				B516C8202E0332CC009CD265 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B516C8242E0332CC009CD265 /* PBXTargetDependency */,
+			);
+			name = "Star SailorsUITests";
+			productName = "Star SailorsUITests";
+			productReference = B516C8222E0332CC009CD265 /* Star SailorsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B516C8002E0332CB009CD265 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					B516C8072E0332CB009CD265 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					B516C8172E0332CC009CD265 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = B516C8072E0332CB009CD265;
+					};
+					B516C8212E0332CC009CD265 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = B516C8072E0332CB009CD265;
+					};
+				};
+			};
+			buildConfigurationList = B516C8032E0332CB009CD265 /* Build configuration list for PBXProject "Star Sailors" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B516C7FF2E0332CB009CD265;
+			packageReferences = (
+				B516C8352E033345009CD265 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
+			productRefGroup = B516C8092E0332CB009CD265 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B516C8072E0332CB009CD265 /* Star Sailors */,
+				B516C8172E0332CC009CD265 /* Star SailorsTests */,
+				B516C8212E0332CC009CD265 /* Star SailorsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B516C8062E0332CB009CD265 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B516C8132E0332CB009CD265 /* Preview Assets.xcassets in Resources */,
+				B516C8102E0332CB009CD265 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B516C8162E0332CC009CD265 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B516C8202E0332CC009CD265 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B516C8042E0332CB009CD265 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B516C80E2E0332CB009CD265 /* ContentView.swift in Sources */,
+				B516C84A2E0338D2009CD265 /* Theme.swift in Sources */,
+				B516C8502E0339F0009CD265 /* AuthView.swift in Sources */,
+				B516C8472E033381009CD265 /* Supabase.swift in Sources */,
+				B516C80C2E0332CB009CD265 /* Star_SailorsApp.swift in Sources */,
+				B516C84D2E033961009CD265 /* Models.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B516C8142E0332CC009CD265 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B516C81D2E0332CC009CD265 /* Star_SailorsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B516C81E2E0332CC009CD265 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B516C8292E0332CC009CD265 /* Star_SailorsUITestsLaunchTests.swift in Sources */,
+				B516C8272E0332CC009CD265 /* Star_SailorsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B516C81A2E0332CC009CD265 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B516C8072E0332CB009CD265 /* Star Sailors */;
+			targetProxy = B516C8192E0332CC009CD265 /* PBXContainerItemProxy */;
+		};
+		B516C8242E0332CC009CD265 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B516C8072E0332CB009CD265 /* Star Sailors */;
+			targetProxy = B516C8232E0332CC009CD265 /* PBXContainerItemProxy */;
+		};
+		B516C8412E033356009CD265 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = B516C8402E033356009CD265 /* Supabase */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B516C82A2E0332CC009CD265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B516C82B2E0332CC009CD265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B516C82D2E0332CC009CD265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Star Sailors/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fromscroobles.Star-Sailors";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B516C82E2E0332CC009CD265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Star Sailors/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fromscroobles.Star-Sailors";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B516C8302E0332CC009CD265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fromscroobles.Star-SailorsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Star Sailors.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Star Sailors";
+			};
+			name = Debug;
+		};
+		B516C8312E0332CC009CD265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fromscroobles.Star-SailorsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Star Sailors.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Star Sailors";
+			};
+			name = Release;
+		};
+		B516C8332E0332CC009CD265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fromscroobles.Star-SailorsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Star Sailors";
+			};
+			name = Debug;
+		};
+		B516C8342E0332CC009CD265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fromscroobles.Star-SailorsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Star Sailors";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B516C8032E0332CB009CD265 /* Build configuration list for PBXProject "Star Sailors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B516C82A2E0332CC009CD265 /* Debug */,
+				B516C82B2E0332CC009CD265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B516C82C2E0332CC009CD265 /* Build configuration list for PBXNativeTarget "Star Sailors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B516C82D2E0332CC009CD265 /* Debug */,
+				B516C82E2E0332CC009CD265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B516C82F2E0332CC009CD265 /* Build configuration list for PBXNativeTarget "Star SailorsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B516C8302E0332CC009CD265 /* Debug */,
+				B516C8312E0332CC009CD265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B516C8322E0332CC009CD265 /* Build configuration list for PBXNativeTarget "Star SailorsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B516C8332E0332CC009CD265 /* Debug */,
+				B516C8342E0332CC009CD265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B516C8352E033345009CD265 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B516C8362E033345009CD265 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B516C8352E033345009CD265 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		B516C8382E033345009CD265 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B516C8352E033345009CD265 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		B516C83A2E033345009CD265 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B516C8352E033345009CD265 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		B516C83C2E033345009CD265 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B516C8352E033345009CD265 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		B516C83E2E033345009CD265 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B516C8352E033345009CD265 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		B516C8402E033356009CD265 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B516C8352E033345009CD265 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+		B516C8432E033366009CD265 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B516C8352E033345009CD265 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B516C8002E0332CB009CD265 /* Project object */;
+}
