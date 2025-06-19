@@ -223,3 +223,11 @@ struct AnyCodable: Codable {
         }
     }
 }
+
+struct UpdateProfileParams: Encodable {
+    let username: String
+    
+    enum CodingKeys: String, CodingKey {
+        case username
+    }
+}

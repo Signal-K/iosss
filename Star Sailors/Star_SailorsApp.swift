@@ -16,7 +16,8 @@ struct Star_SailorsApp: App {
         WindowGroup {
             Group {
                 if authManager.isAuthenticated {
-                    SuccessView()
+//                    SuccessView()
+                    TabMenu()
                 } else {
                     AuthView()
                 }
