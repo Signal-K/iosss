@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B50496562E0B886B00BFC16B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50496552E0B886B00BFC16B /* CameraView.swift */; };
+		B50496582E0B8A7B00BFC16B /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50496572E0B8A7B00BFC16B /* CameraManager.swift */; };
+		B504965A2E0B8A9D00BFC16B /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50496592E0B8A9D00BFC16B /* CameraPreview.swift */; };
 		B516C80C2E0332CB009CD265 /* Star_SailorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B516C80B2E0332CB009CD265 /* Star_SailorsApp.swift */; };
 		B516C80E2E0332CB009CD265 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B516C80D2E0332CB009CD265 /* ContentView.swift */; };
 		B516C8102E0332CB009CD265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B516C80F2E0332CB009CD265 /* Assets.xcassets */; };
@@ -27,6 +30,10 @@
 		B53223132E0487CE0095EB74 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53223122E0487CE0095EB74 /* ProfileView.swift */; };
 		B53223182E048A1E0095EB74 /* TabMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53223172E048A1E0095EB74 /* TabMenu.swift */; };
 		B532231A2E048A650095EB74 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53223192E048A650095EB74 /* HomeView.swift */; };
+		B59034582E0D9A6300FA1B21 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59034572E0D9A6300FA1B21 /* Inventory.swift */; };
+		B590345C2E0DCAAE00FA1B21 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B590345B2E0DCAAE00FA1B21 /* MapView.swift */; };
+		B590345E2E0DD94000FA1B21 /* DeployedFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B590345D2E0DD94000FA1B21 /* DeployedFetch.swift */; };
+		B59034622E0DE20A00FA1B21 /* DeployedAnomalies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59034612E0DE20A00FA1B21 /* DeployedAnomalies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B50496552E0B886B00BFC16B /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		B50496572E0B8A7B00BFC16B /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		B50496592E0B8A9D00BFC16B /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
 		B516C8082E0332CB009CD265 /* Star Sailors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Star Sailors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B516C80B2E0332CB009CD265 /* Star_SailorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star_SailorsApp.swift; sourceTree = "<group>"; };
 		B516C80D2E0332CB009CD265 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +74,10 @@
 		B53223122E0487CE0095EB74 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B53223172E048A1E0095EB74 /* TabMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenu.swift; sourceTree = "<group>"; };
 		B53223192E048A650095EB74 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B59034572E0D9A6300FA1B21 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		B590345B2E0DCAAE00FA1B21 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B590345D2E0DD94000FA1B21 /* DeployedFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeployedFetch.swift; sourceTree = "<group>"; };
+		B59034612E0DE20A00FA1B21 /* DeployedAnomalies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeployedAnomalies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +111,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B50496532E0B885000BFC16B /* Exploring */ = {
+			isa = PBXGroup;
+			children = (
+				B50496552E0B886B00BFC16B /* CameraView.swift */,
+				B50496572E0B8A7B00BFC16B /* CameraManager.swift */,
+				B50496592E0B8A9D00BFC16B /* CameraPreview.swift */,
+				B590345B2E0DCAAE00FA1B21 /* MapView.swift */,
+			);
+			path = Exploring;
+			sourceTree = "<group>";
+		};
 		B516C7FF2E0332CB009CD265 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +146,8 @@
 		B516C80A2E0332CB009CD265 /* Star Sailors */ = {
 			isa = PBXGroup;
 			children = (
+				B59034562E0D9A5500FA1B21 /* User */,
+				B50496532E0B885000BFC16B /* Exploring */,
 				B53223152E048A120095EB74 /* Layout */,
 				B516C84B2E033959009CD265 /* Models */,
 				B516C8482E0338C8009CD265 /* Styling */,
@@ -186,6 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				B516C84C2E033961009CD265 /* Models.swift */,
+				B590345D2E0DD94000FA1B21 /* DeployedFetch.swift */,
+				B59034612E0DE20A00FA1B21 /* DeployedAnomalies.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -214,6 +243,14 @@
 				B53223192E048A650095EB74 /* HomeView.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		B59034562E0D9A5500FA1B21 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B59034572E0D9A6300FA1B21 /* Inventory.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,14 +396,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				B532231A2E048A650095EB74 /* HomeView.swift in Sources */,
+				B59034622E0DE20A00FA1B21 /* DeployedAnomalies.swift in Sources */,
 				B516C80E2E0332CB009CD265 /* ContentView.swift in Sources */,
 				B516C84A2E0338D2009CD265 /* Theme.swift in Sources */,
+				B59034582E0D9A6300FA1B21 /* Inventory.swift in Sources */,
+				B50496562E0B886B00BFC16B /* CameraView.swift in Sources */,
+				B590345E2E0DD94000FA1B21 /* DeployedFetch.swift in Sources */,
 				B516C8502E0339F0009CD265 /* AuthView.swift in Sources */,
 				B516C8472E033381009CD265 /* Supabase.swift in Sources */,
+				B590345C2E0DCAAE00FA1B21 /* MapView.swift in Sources */,
 				B53223182E048A1E0095EB74 /* TabMenu.swift in Sources */,
 				B516C80C2E0332CB009CD265 /* Star_SailorsApp.swift in Sources */,
 				B53223132E0487CE0095EB74 /* ProfileView.swift in Sources */,
+				B504965A2E0B8A9D00BFC16B /* CameraPreview.swift in Sources */,
 				B516C84D2E033961009CD265 /* Models.swift in Sources */,
+				B50496582E0B8A7B00BFC16B /* CameraManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

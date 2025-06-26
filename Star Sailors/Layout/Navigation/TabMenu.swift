@@ -19,6 +19,21 @@ struct TabMenu: View {
                 .tabItem {
                     Label("Settings", systemImage: "gearshape.fill")
                 }
+            
+            CameraScene()
+                .tabItem {
+                    Label("Explore", systemImage: "camera.fill")
+                }
+            
+            Inventory()
+                .tabItem {
+                    Label("Holdings", systemImage: "lightbulb.fill")
+                }
+            
+            AnomalyListView()
+                .tabItem {
+                    Label("Map", systemImage: "lightbublb.fill")
+                }
         }
         
         .accentColor(.gardenGreen)

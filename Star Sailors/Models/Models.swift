@@ -29,71 +29,71 @@ struct Classification: Codable, Identifiable {
     }
 }
 
-struct Anomaly: Codable, Identifiable {
-    let id: Int64
-    let content: String?
-    let ticId: String?
-    let anomalyType: String?
-    let createdAt: Date
-    let configuration: [String: AnyCodable]?
-    let parentAnomaly: Int64?
-    let anomalySet: String?
+//struct Anomaly: Codable, Identifiable {
+//    let id: Int64
+//    let content: String?
+//    let ticId: String?
+//    let anomalyType: String?
+//    let createdAt: Date
+//    let configuration: [String: AnyCodable]?
+//    let parentAnomaly: Int64?
+//    let anomalySet: String?
+//
+//    enum CodingKeys: String, CodingKey {
+//        case id
+//        case content
+//        case ticId = "ticId"
+//        case anomalyType = "anomalytype"
+//        case createdAt = "created_at"
+//        case configuration
+//        case parentAnomaly = "parentAnomaly"
+//        case anomalySet = "anomalySet"
+//    }
+//}
 
-    enum CodingKeys: String, CodingKey {
-        case id
-        case content
-        case ticId = "ticId"
-        case anomalyType = "anomalytype"
-        case createdAt = "created_at"
-        case configuration
-        case parentAnomaly = "parentAnomaly"
-        case anomalySet = "anomalySet"
-    }
-}
+//struct Inventory: Codable, Identifiable {
+//    let id: Int64
+//    let item: Int64?
+//    let owner: UUID?
+//    let quantity: Double?
+//    let notes: String?
+//    let timeOfDeploy: Date?
+//    let anomaly: Int64?
+//    let parentItem: Int64?
+//    let configuration: [String: AnyCodable]?
+//    let terrarium: Int64?
+//
+//    enum CodingKeys: String, CodingKey {
+//        case id
+//        case item
+//        case owner
+//        case quantity
+//        case notes
+//        case timeOfDeploy = "time_of_deploy"
+//        case anomaly
+//        case parentItem = "parentItem"
+//        case configuration
+//        case terrarium
+//    }
+//}
 
-struct Inventory: Codable, Identifiable {
-    let id: Int64
-    let item: Int64?
-    let owner: UUID?
-    let quantity: Double?
-    let notes: String?
-    let timeOfDeploy: Date?
-    let anomaly: Int64?
-    let parentItem: Int64?
-    let configuration: [String: AnyCodable]?
-    let terrarium: Int64?
-
-    enum CodingKeys: String, CodingKey {
-        case id
-        case item
-        case owner
-        case quantity
-        case notes
-        case timeOfDeploy = "time_of_deploy"
-        case anomaly
-        case parentItem = "parentItem"
-        case configuration
-        case terrarium
-    }
-}
-
-struct LinkedAnomaly: Codable, Identifiable {
-    let id: Int64
-    let author: UUID
-    let anomalyId: Int64
-    let classificationId: Int64?
-    let date: Date
-    let automaton: String?
-
-    enum CodingKeys: String, CodingKey {
-        case id
-        case author
-        case anomalyId = "anomaly_id"
-        case classificationId = "classification_id"
-        case date
-        case automaton
-    }
-}
+//struct LinkedAnomaly: Codable, Identifiable {
+//    let id: Int64
+//    let author: UUID
+//    let anomalyId: Int64
+//    let classificationId: Int64?
+//    let date: Date
+//    let automaton: String?
+//
+//    enum CodingKeys: String, CodingKey {
+//        case id
+//        case author
+//        case anomalyId = "anomaly_id"
+//        case classificationId = "classification_id"
+//        case date
+//        case automaton
+//    }
+//}
 
 struct Event: Codable, Identifiable {
     let id: Int64
