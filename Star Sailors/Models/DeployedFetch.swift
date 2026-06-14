@@ -8,33 +8,6 @@
 import Foundation
 import CoreLocation
 
-struct LinkedAnomaly: Decodable, Identifiable {
-    let id: Int64
-    let anomaly: Anomaly
-}
-
-struct Anomaly: Decodable {
-    let id: Int64
-    let content: String?
-    var coordinate: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 0, longitude: 0)
-
-    enum CodingKeys: String, CodingKey {
-        case id, content
-    }
-
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        id = try container.decode(Int64.self, forKey: .id)
-        content = try container.decodeIfPresent(String.self, forKey: .content)
-    }
-
-    init(id: Int64, content: String?, coordinate: CLLocationCoordinate2D) {
-        self.id = id
-        self.content = content
-        self.coordinate = coordinate
-    }
-}
-
 @MainActor
 class AnomalyViewModel: ObservableObject {
     @Published var anomalies: [LinkedAnomaly] = []

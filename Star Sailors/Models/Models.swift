@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct Classification: Codable, Identifiable {
     let id: Int64
@@ -29,27 +30,50 @@ struct Classification: Codable, Identifiable {
     }
 }
 
-//struct Anomaly: Codable, Identifiable {
-//    let id: Int64
-//    let content: String?
-//    let ticId: String?
-//    let anomalyType: String?
-//    let createdAt: Date
-//    let configuration: [String: AnyCodable]?
-//    let parentAnomaly: Int64?
-//    let anomalySet: String?
-//
-//    enum CodingKeys: String, CodingKey {
-//        case id
-//        case content
-//        case ticId = "ticId"
-//        case anomalyType = "anomalytype"
-//        case createdAt = "created_at"
-//        case configuration
-//        case parentAnomaly = "parentAnomaly"
-//        case anomalySet = "anomalySet"
-//    }
-//}
+// Table < > Struct relationships
+
+struct Anomaly: Decodable { // Corresponds to `anomalies` sb table
+    let id: Int64
+    let content: String?
+    
+    // Q: - is this going to affect when we pull anomalies in that won't have coordinates?
+    var coordinate: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 0, longitude: 0)
+    
+    // Other values (based on table nomenclature)
+    /*
+    var anomalySet: String?
+    var anomalytype: String?
+    var configuration: [String: AnyCodable]?
+    var createdAt: Date
+    */
+    
+    enum CodingKeys: String, CodingKey {
+        case id, content
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decode(Int64.self, forKey: .id)
+        content = try container.decodeIfPresent(String.self, forKey: .content)
+    }
+    
+    init(id: Int64, content: String?, coordinate: CLLocationCoordinate2D) {
+        self.id = id
+        self.content = content
+        self.coordinate = coordinate
+    }
+}
+
+struct LinkedAnomaly: Decodable, Identifiable { // Corresponds to `linked_anomalies` sb table
+    let id: Int64
+    let anomaly: Anomaly
+    
+//    let author: UUID?
+//    let automaton: String?
+//    let date: Date?
+//    let classification_id: Int64?
+//    let anomaly_id: Int64?
+}
 
 //struct Inventory: Codable, Identifiable {
 //    let id: Int64
@@ -74,24 +98,6 @@ struct Classification: Codable, Identifiable {
 //        case parentItem = "parentItem"
 //        case configuration
 //        case terrarium
-//    }
-//}
-
-//struct LinkedAnomaly: Codable, Identifiable {
-//    let id: Int64
-//    let author: UUID
-//    let anomalyId: Int64
-//    let classificationId: Int64?
-//    let date: Date
-//    let automaton: String?
-//
-//    enum CodingKeys: String, CodingKey {
-//        case id
-//        case author
-//        case anomalyId = "anomaly_id"
-//        case classificationId = "classification_id"
-//        case date
-//        case automaton
 //    }
 //}
 
